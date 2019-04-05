@@ -32,7 +32,7 @@
               <span class="icon-shopping-cart header__icon"></span>
             </div>
             <div class="header__btn">
-                <a data-fancybox data-src="#modal" href="javascript:;" class="header__login">Login</a>
+              <a data-fancybox data-src="#modal" href="javascript:;" class="header__login">Login</a>
               <button class="header__register">Register</button>
             </div>
           </div>
@@ -58,6 +58,79 @@
       </div>
     </div>
   </header>
+  <main class="main upload-product">
+    <div class="breadcrumbs">
+      <div class="container">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs-items">
+            <a href="#">Home</a>
+          </li>
+          <li class="breadcrumbs-items">
+            <span>Product Page</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="upload-product__inner">
+        <div class="upload-product__title">
+          Upload Your item
+        </div>
+        <form class="upload-product__form">
+          <div class="upload-product__item">
+            <label>Select Categories<sup>*</sup></label>
+            <select required name="" id="">
+              <option value="">Select</option>
+              <option value=""></option>
+              <option value=""></option>
+            </select>
+          </div>
+          <div class="upload-product__item">
+            <label>Product Name<sup>*</sup></label>
+            <input required type="text" placeholder="Enter your product name here ...">
+          </div>
+          <div class="upload-product__item">
+            <label>Product Description<sup>*</sup></label>
+            <textarea required placeholder="<h1> Type your text  here </h1>"></textarea>
+          </div>
+          <div class="upload-product__item">
+            <label>Upload Main File<sup>*</sup></label>
+            <input required type="file"></div>
+          <div class="upload-product__item">
+            <label>Upload Screenshots<sup>*</sup></label>
+            <input required type="file">
+          </div>
+          <div class="upload-product__item">
+            <label>File Included<sup>*</sup></label>
+            <input required placeholder="Select File Type " type="text">
+          </div>
+          <div class="upload-product__item">
+            <label>File Dimensions<sup>*</sup></label>
+            <input required placeholder="Enter the item  dimentionss here ..." type="text">
+          </div>
+          <div class="upload-product__item">
+            <label>Item Tags<sup>*</sup></label>
+            <input required type="text" placeholder="Enter Tag Here">
+          </div>
+          <div class="upload-product__title">
+            Set Your Price (US$)
+          </div>
+          <div class="upload-product__item">
+            <label>Regular License<sup>*</sup></label>
+            <input required type="number" placeholder="$00.00">
+          </div>
+          <div class="upload-product__item">
+            <label>Extended License<sup>*</sup></label>
+            <input required type="number" placeholder="$00.00">
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+
+
+
 
 
   <footer class="footer">
@@ -78,14 +151,14 @@
                 Victoria 8007 Australia
               </div>
               <a class="footer__phone" href="tel:61383766284">
-                  +61 3 8376 6284
+                +61 3 8376 6284
               </a>
             </div>
           </div>
           <div class="col-3">
             <div>
               <div class="footer__title">
-                  Join Our Community 
+                Join Our Community
               </div>
               <ul class="footer__list">
                 <li><a href="#">Home</a></li>
@@ -99,7 +172,7 @@
           <div class="col-3">
             <div>
               <div class="footer__title">
-                  Need Help?
+                Need Help?
               </div>
               <ul class="footer__list">
                 <li><a href="#">Help Center</a></li>
@@ -113,13 +186,13 @@
           <div class="col-3">
             <div>
               <div class="footer__title">
-                  Follow Us On
+                Follow Us On
               </div>
               <div class="footer__social">
                 <ul>
                   <li>
                     <a href="#"><span class="icon-facebook"></span></a>
-                   </li>
+                  </li>
                   <li>
                     <a href="#"><span class="icon-twitter"></span></a></li>
                   <li>
@@ -150,23 +223,24 @@
   </footer>
 
   <div class="popup-login" id="modal">
-      <div class="popup-login__title">
-        login
-      </div>
-      <form class="popup-login__form">
-        <label class="popup-login__name">
-          <input type="text" placeholder="Name">
-        </label>
-        <label class="popup-login__password">
-          <input type="password" placeholder="Password">
-        </label>
-        <div class="popup-login__btn">
-          <button>Submit</button>
-          <a class="popup-login__create" href="#">Creat An Account?</a>
-        </div>
-        <a class="popup-login__lost" href="#">Lost Password?</a>
-      </form>
+    <div class="popup-login__title">
+      login
     </div>
+    <form class="popup-login__form">
+      <label class="popup-login__name">
+        <input type="text" placeholder="Name">
+      </label>
+      <label class="popup-login__password">
+        <input type="password" placeholder="Password">
+      </label>
+      <div class="popup-login__btn">
+        <button>Submit</button>
+        <a class="popup-login__create" href="#">Creat An Account?</a>
+      </div>
+      <a class="popup-login__lost" href="#">Lost Password?</a>
+    </form>
+  </div>
+
 
 
 
