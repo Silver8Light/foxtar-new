@@ -126,3 +126,43 @@ a{
 .fancybox-button svg path {
     stroke-width: 2px;
 }
+
+.fancybox-slide--html .fancybox-close-small {
+	&:before {
+		content: "\f044";
+		font-family: "icomoon";
+		color: #fff;
+		font-weight: 500;
+	}
+}
+
+.breadcrumbs {
+	padding: 45px 0px 40px;
+}
+
+.breadcrumbs-item {
+	display: inline-block;
+	position: relative;
+
+	a {
+		color: #b0bec5;
+	}
+
+	span {
+		color: black;
+	}
+
+	&+.breadcrumbs-item {
+		padding-left: 24px;
+
+		&:before {
+			content: "";
+			position: absolute;
+			width: 5px;
+			height: 2px;
+			background-color: $green;
+			top: 50%;
+			left: 8px;
+		}
+	}
+}
