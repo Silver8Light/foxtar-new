@@ -11,5 +11,14 @@ $(function(){
 
   $('input, select').styler();
 
+  var mixer = mixitup('.lets__check__container');
+
+  $('.slider__wrapper').slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    arrows: false,
+    dots: true
+  });
 
 });
