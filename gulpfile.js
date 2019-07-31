@@ -7,14 +7,14 @@ var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('scss', function(){
-    return gulp.src('app/scss/**/*.scss')
-            .pipe(scss({outputStyle: 'compressed'}))
-            .pipe(autoprefixer({
-                browsers: ['last 8 versions'],
-                }))
-            .pipe(rename({suffix: '.min'}))
-            .pipe(gulp.dest('app/css'))
-            .pipe(browserSync.reload({stream: true}))
+  return gulp.src('app/scss/**/*.scss')
+          .pipe(scss({outputStyle: 'compressed'}))
+          .pipe(autoprefixer({
+              overrideBrowserslist:  ['last 8 versions'],
+              }))
+          .pipe(rename({suffix: '.min'}))
+          .pipe(gulp.dest('app/css'))
+          .pipe(browserSync.reload({stream: true}))
 });
 
 gulp.task('script', function(){
